@@ -1,0 +1,24 @@
+{
+  "name": "graphql-server-ts",
+  "version": "1.0.0",
+  "author": "Brais Piñeiro <brapifra@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.2",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "compile": "tsc --p .",
+    "start": "nodemon -e ts --exec \"npm run compile && node dist/index.js\""
+  },
+  "dependencies": {
+    "@okgrow/graphql-scalars": "^0.4.0",
+    "@types/jsonwebtoken": "^7.2.8",
+    "@types/mongodb": "^3.1.1",
+    "graphql-yoga": "^1.14.12",
+    "jsonwebtoken": "^8.3.0",
+    "mongodb": "^3.1.1",
+    "reflect-metadata": "^0.1.12",
+    "type-graphql": "^0.12.3"
+  }
+}
